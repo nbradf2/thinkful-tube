@@ -1,0 +1,135 @@
+/***** CSS RESET *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    /* reset Chrome user agent styles */
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/***** GENERAL STYLES (background) *****/
+
+html {
+    background-color: #260c1a;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/***** HEADER & CONTENT STYLES (main module) *****/
+
+.wrapper {
+    background: #e6e4e3;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.wrapper h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #260c1a;
+}
+
+.wrapper form {
+    margin-top: 2em;
+}
+
+.wrapper form #query {
+    display: block;
+    border: 1px solid #c7ea27;
+    background: none;
+    padding: .3em;
+    font-size: 1.5em;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wrapper form div {
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+/***** BUTTON GENERATOR *****/
+
+.wrapper form div .myButton {
+    background-color: #260c1a;
+    color: #e6e4e3;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/*
+.wrapper form div button: hover {
+    background-color: #432e36;
+}
+*/
+
+.wrapper form div .myButton: active {
+    position: relative;
+    top: 1px;
+}
+
+.wrapper #search-results ul {
+    overflow: hidden;
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.wrapper #search-results li {
+    float: left;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #c7ea27;
+    border-radius: 10px;
+    color: #e6e4e3;
+}
+
+.wrapper #search-results li img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.wrapper #search-results li p {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c7ea27;
+    min-height: 4rem;
+}
+
+
+/***** RESPONSIVE STYLES *****/
+
+@media only screen and (min-width: 500px) {
+    #search-results li {
+        width: 48%;
+        float: left;
+        clear: both;
+    }
+    #search-results li:nth-child(2n) {
+        float: right;
+        clear: none;
+    }
+}
