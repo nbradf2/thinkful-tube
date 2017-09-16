@@ -2,27 +2,32 @@
     <html lang="eng">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Thinkful Tube app allowing users to search for videos">
-        <title>Thinkful Tube</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thinkful Tube app allowing users to search for videos">
+    <title>Thinkful Tube Challenge</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+</head>
 
-    <body>
-        <main role="main">
-            <h1>Thinkful Tube</h1>
-            <p>Search for videos on YouTube!</p>
-            <form action="#">
+<body>
+    <main role="main" class="wrapper">
+        <h1><img src="yt_logo_rgb_light.png" width="150px" alt="YouTube logo"></h1>
+        <p>Search for videos on YouTube!</p>
+        <form action="#" id="search-form">
+            <input type="text" id="query" placeholder="i.e. Cat" />
+            <div>
+                <input type="submit" class="myButton" value="Search" id="submit" />
+            </div>
+        </form>
+        <div id="search-results">
+            <ul></ul>
+        </div>
 
-            </form>
-
-        </main>
-        <footer role="contentinfo">
-
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script src="app.js"></script>
-    </body>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="app.js"></script>
+</body>
 
     </html>
