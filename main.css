@@ -58,6 +58,7 @@ body {
     border: 1px solid #c7ea27;
     background: none;
     padding: .3em;
+    font-family: "Oxygen", sans-serif;
     font-size: 1.5em;
     width: 100%;
     border-radius: 10px;
@@ -75,10 +76,12 @@ body {
 .wrapper form div .myButton {
     background-color: #260c1a;
     color: #e6e4e3;
+    font-family: "Oxygen", sans-serif;
     width: 150px;
     height: 50px;
     border-radius: 10px;
 }
+
 
 /*
 .wrapper form div button: hover {
